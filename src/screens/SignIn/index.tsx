@@ -1,7 +1,12 @@
 import React from 'react';
 
-import { Container } from './styles';
+import { Container, Content, Background } from './styles';
 
-const SignIn = () => <Container />;
+const SignIn = () => (
+  <Container>
+    <Content />
+    <Background />
+  </Container>
+);
 
 export default SignIn;

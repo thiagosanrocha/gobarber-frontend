@@ -22,6 +22,7 @@
     "react",
     "prettier",
     "react-hooks",
+    "import-helpers",
     "@typescript-eslint"
   ],
   "rules": {
@@ -29,6 +30,7 @@
     "prettier/prettier": "error",
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",
+    "react/jsx-props-no-spreading": "off",
     "react/jsx-filename-extension": [1, { "extensions": [".tsx"] }],
     "@typescript-eslint/explicit-module-boundary-types": "off",
     "import/prefer-default-export": "off",
@@ -38,6 +40,19 @@
       {
         "ts": "never",
         "tsx": "never"
+      }
+    ],
+    "import-helpers/order-imports": [
+      "warn",
+      {
+        "newlinesBetween": "always",
+        "groups": [
+          "/^react$/",
+          "module",
+          ["parent", "sibling", "index"],
+          "/^./styles$/"
+        ],
+        "alphabetize": { "order": "ignore", "ignoreCase": true }
       }
     ]
   },
