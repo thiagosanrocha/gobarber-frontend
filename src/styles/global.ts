@@ -17,6 +17,10 @@ export default createGlobalStyle`
     font-family: 'Roboto Slab', serif;
   }
 
+  h1 {
+    font-weight: 500;
+  }
+
   button {
     cursor: pointer;
   }
