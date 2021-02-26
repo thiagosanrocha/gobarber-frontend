@@ -1,7 +1,44 @@
 import React from 'react';
 
-import { Container } from './styles';
+import { FiArrowLeft } from 'react-icons/fi';
 
-const SignUp = () => <Container />;
+import { Logo } from '../../assets/images';
 
-export default SignUp;
+import {
+  Container,
+  Content,
+  Background,
+  Form,
+  NameInput,
+  EmailInput,
+  PasswordInput,
+  SignUpButton,
+  LinkSignIn,
+} from './styles';
+
+const SignUn = () => (
+  <Container>
+    <Background />
+
+    <Content>
+      <Logo />
+
+      <Form>
+        <h1>Faça seu cadastro</h1>
+
+        <NameInput type="text" placeholder="Nome" />
+        <EmailInput type="email" placeholder="E-mail" />
+        <PasswordInput type="password" placeholder="Senha" />
+
+        <SignUpButton>Cadastrar</SignUpButton>
+      </Form>
+
+      <LinkSignIn to="/">
+        <FiArrowLeft size={20} />
+        Voltar para o login
+      </LinkSignIn>
+    </Content>
+  </Container>
+);
+
+export default SignUn;

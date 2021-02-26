@@ -32,7 +32,7 @@ const SignIn = () => (
 
       <ForgotPassword to="/">Esqueci minha senha</ForgotPassword>
 
-      <LinkSignUp to="/">
+      <LinkSignUp to="/sign-up">
         <FiLogIn size={20} />
         Criar conta
       </LinkSignUp>
