@@ -14,9 +14,10 @@ const icons: Icons = {
   text: <FiUser />,
 };
 
-const Input = ({ type = 'text', ...rest }: InputProps) => (
-  <Container>
+const Input = ({ type = 'text', style, className, ...rest }: InputProps) => (
+  <Container style={style} className={className}>
     {type in icons && icons[type]}
+
     <input type={type} {...rest} />
   </Container>
 );
