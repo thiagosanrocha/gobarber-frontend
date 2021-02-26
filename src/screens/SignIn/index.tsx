@@ -24,7 +24,7 @@ const SignIn = () => (
       <Form>
         <h1>Faça seu login</h1>
 
-        <EmailInput type="text" placeholder="E-mail" />
+        <EmailInput type="email" placeholder="E-mail" />
         <PasswordInput type="password" placeholder="Senha" />
 
         <LoginButton>Entrar</LoginButton>
